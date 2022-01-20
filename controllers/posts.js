@@ -15,7 +15,7 @@ const index = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    req.body.tags = req.body.tags.replace(/\s''/g).split(", ").map(function(tag) {
+    req.body.tags = req.body.tags.map(function(tag) {
       return { "tagName": tag } 
       })
     req.body.added_by = req.user.profile

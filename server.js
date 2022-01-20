@@ -18,6 +18,7 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'build')
   )
 )
+
 app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
