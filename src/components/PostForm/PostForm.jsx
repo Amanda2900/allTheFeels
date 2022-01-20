@@ -1,4 +1,6 @@
 import React from 'react'
+import Tag from '../Tag.jsx'
+
 import '../../components/PostForm/CreatePost.css'
 
 
@@ -46,16 +48,25 @@ const PostForm = (props) => {
           </div>          
 
         <div className='form-group tags'>
-            <label className='label-title'>Add Tags: </label>          
-            <textarea className='form-input tags' 
-              style={{height: "100px", width: "300px"}}
+            
+            <input id='new-tag' type='text' className='form-input tags'
               required
-              name="tags"
+              name="new-tag"
               autoComplete='off'
               placeholder="Ex: apple, pear, tiger"
-              value={props.tags}
-              onChange={(e) => props.setTags(e.target.value)}
+              // value={props.tags}
+              // onChange={(e) => props.setTags(e.target.value)}
             />
+            <button className="add-tag-button" onClick={props.addNewTag}>+</button>
+            <ul>
+              {props.tags.map((tag, index) => (
+                <li>
+                  <Tag tag={tag} key={tag+index}/>
+                </li>
+              ))}
+            </ul>
+            <ul>
+            </ul>
         </div>
       </div>
           <div className='createBtn-wrapper'>

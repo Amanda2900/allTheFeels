@@ -13,7 +13,12 @@ const CreatePost = (props) => {
   const [image, setImage ] = useState('')
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
-  const [tags, setTags] = useState('')
+  const [tags, setTags] = useState([])
+
+  const addNewTag = (event) => {
+    let newTag = document.getElementById('new-tag')
+    setTags([...tags, newTag.value])
+  }
 
   const formData = {
     title: title,
@@ -64,6 +69,7 @@ const CreatePost = (props) => {
 
       tags={tags}
       setTags={setTags}
+      addNewTag={addNewTag}
 
       setImage={setImage}
 
