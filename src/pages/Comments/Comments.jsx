@@ -26,22 +26,27 @@ const Comments = (props) => {
     }
   }
 
+
   return (
     <div className="comment-section">
-      <h2> </h2>
       <div className="card-header">
         <CreateComment 
           {...props} 
           handleCreateComment={handleCreateComment}
         />
-        {props.comments?.map((comment, index) => (
-          <CommentList
-            key={index}
-            comment={comment}
-            user={props.user}
-            handleDeleteComment={handleDeleteComment}
-          />
-        )).reverse()}
+        <div className="comment-list">
+          {props.comments.length === 0
+            ? <h3 className="no-comment">There are no comments yet.</h3>
+            : props.comments.map((comment, index) => (
+              <CommentList
+                key={index}
+                comment={comment}
+                user={props.user}
+                handleDeleteComment={handleDeleteComment}
+              />
+            )).reverse()
+          }
+        </div>
       </div>
     </div>
   )

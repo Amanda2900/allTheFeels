@@ -13,11 +13,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: solid 1px black;
-  box-shadow: 5px 5px 5px rgb(80, 79, 79);
-  border-radius: 10px;
-  background-color: rgba(218, 218, 222, 0.797);
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 50px 70px;
 }
 
@@ -29,37 +25,41 @@
 
 .landing-button-container {
   width: 100%;
-  margin: 50px;
   display: flex;
   justify-content: center;
 }
 
-.landing-button-container button {
-  border: none;
-  color: white;
-  font-size: 20px;
+.landing-button-container a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 20px;
+  margin: 30px;
+  font-size: 2rem;
   font-weight: 600;
-  max-width: 200px;
-  border-radius: 7px;
-  background: #5095e9;
-  padding: 8px 36px 10px 36px;
-  margin: 10px 20px 10px 10px;
 }
 
-.landing-button-container a {
-  color: white;
-  text-decoration: none;
+.landing-button-container a:hover {
+  border-radius: 7px;
+  color: var(--background-color);
+  background-color: var(--text-color);
 }
 
 @media only screen and (max-width: 850px) {
-  .landing-elements{
-    height: 75%;
+
+  .landing-elements {
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 100px;
   }
 
   .logo-splash {
     display: flex;
-    width: 90vw;
-    max-width: 350px;
+    width: 75vw;
+    min-width: 200px;
+  }
+
+  .landing-button-container a {
+    margin: 20px;
   }
 
 }

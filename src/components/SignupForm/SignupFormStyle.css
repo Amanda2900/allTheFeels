@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .title-container{
@@ -16,7 +15,6 @@
 }
 
 .title-container h3 {
-  opacity: .5;
   margin: 14px 0px 32px 0px;
   font-weight: 600;
 }
@@ -33,12 +31,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 450px; 
-  border: solid 1px black;
-  box-shadow: 5px 5px 5px rgb(80, 79, 79);
-  border-radius: 10px;
-  background-color: rgba(218, 218, 222, 0.797);
-  margin-top: 60px;
-  padding: 50px 70px;   
+  margin-top: 60px;  
 }
 
 .register-form {
@@ -51,6 +44,7 @@
   padding: 16px;
   font-size: 20px;
   margin-bottom: 16px;
+  background-color: var(--text-color);
   color: rgb(31, 31, 31);
 }
 
@@ -59,28 +53,30 @@
 }
 
 #avatar-button {
-  border: 1px solid #292934;
   border-radius: 7px;
-  color: #424141;
+  color: var(--background-color);
   text-align: left;
 }
 
 #submit-button{
   margin-top: 22px;
-  background: #5095e9;
-  border: none;
-  color: white;
+  background: none;
+  border: solid 2px var(--text-color);
+  color: var(--text-color);
   font-weight: 600;
   border-radius: 7px;
+}
+
+#submit-button:hover {
+  background: var(--text-color);
+  color: var(--background-color);
 }
 
 .redirect-container{
   display: flex;
 	align-items: center;
-  font-size: 14px;
   font-weight: 500;
-  opacity: .5;
-  color: rgb(79, 79, 79);
+  color: var(--text-color);
 }
 
 .redirect-container p {
@@ -88,8 +84,36 @@
 }
 
 .redirect-link{
-  color: #474648;
+  color: var(--text-color);
   text-decoration: none;
   padding-left: 6px;
-  font-size: 15px;
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.redirect-link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 850px) {
+  .signup-page{
+    justify-content: flex-start;
+    margin-left: 40px;
+  }
+
+  .title-container h3 {
+    font-size: 20px;
+  }
+
+  .redirect-container p {
+    font-size: 14px;
+  }
+  
+  .redirect-link{
+    font-size: 14px;
+  }
+
+  #login {
+    margin-top: -50px;
+  }
 }
