@@ -1,24 +1,22 @@
 <h1>All The Feels</h1>
-The percentage of people who experience symptoms of depression is highest among adolescents and young adults. Self expression through art is proven to relieve stress and significantly decrease anxiety, depression, and suicidal thoughts.
-
-A supportive community is one of the most important emotional resources a person can have. All the Feels is a website that creates a place where adolescents can share their drawings, sketches, doodles, stories, and feelings.  
-
-The updated application is deployed <a href="https://allthefeelsapp.herokuapp.com/">here</a>.
+<p>The percentage of people who experience symptoms of depression is highest among adolescents and young adults. Self expression through art is proven to relieve stress and significantly decrease anxiety, depression, and suicidal thoughts.</p>
+<p>A supportive community is one of the most important emotional resources a person can have. All the Feels is a website that creates a place where adolescents can share their drawings, sketches, doodles, stories, and feelings.</p>
 <br>
 
-There have been improvements and edits made to this application. The original group project before these modifications can be found <a href="https://allthefeelsapp.herokuapp.com/">here</a>.
-<br>
+<p>The application is deployed <a href="https://allthefeelsapp.herokuapp.com/">here</a>.</p>
 
-Click <a href="https://trello.com/b/gQTYPmew/all-the-feels">here</a> to view the ERD and wireframe.
+<p>There have been improvements and edits made to this site. The original group project before these modifications can be found <a href="https://allthefeelsapp.herokuapp.com/">here</a>.</p>
+
+<p>Click <a href="https://trello.com/b/gQTYPmew/all-the-feels">here</a> to view the ERD and wireframe.</p>
 <br>
 
 <h2>Screenshots</h2>
 
-![landing page](./src/assets/logo/screenshot1.png)
-![home page](./src/assets/logo/screenshot2.png)
-![create post page](./src/assets/logo/screenshot3.png)
-![post display page](./src/assets/logo/screenshot4.png)
-![comments on post display page](./src/assets/logo/screenshot5.png)
+![landing page](./src/assets/logo/screenshot_1.png)
+![home page](./src/assets/logo/screenshot_2.png)
+![create post page](./src/assets/logo/screenshot_3.png)
+![post display page](./src/assets/logo/screenshot_4.png)
+![comments on post display page](./src/assets/logo/screenshot_5.png)
 
 <br>
 
