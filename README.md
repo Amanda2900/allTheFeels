@@ -3,7 +3,7 @@
 <p>A supportive community is one of the most important emotional resources a person can have. All the Feels is a website that creates a place where adolescents can share their drawings, sketches, doodles, stories, and feelings.</p>
 <br>
 
-<p>The application is deployed <a href="https://allthefeelsapp.herokuapp.com/">here</a>.</p>
+<p>The application is deployed <a href="https://allofthefeels.herokuapp.com/">here</a>.</p>
 
 <p>There have been improvements and edits made to this site. The original group project before these modifications can be found <a href="https://allthefeelsapp.herokuapp.com/">here</a>.</p>
 
